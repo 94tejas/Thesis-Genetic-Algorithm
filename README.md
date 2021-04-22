@@ -1,7 +1,7 @@
 # Thesis-Genetic-Algorithm
 ---
 
-##Introduction:
+## Introduction:
 
 The idea that some biological processes might operate on quantum mechanical laws has been
 around for about a century. Recent studies in the past few decades have indicated a possible link between some biological
@@ -49,7 +49,7 @@ they provide many good solutions for the problem
 
 ---
 
-##Genetic Algorithm:
+## Genetic Algorithm:
 
 Genetic algorithms are optimization algorithms used for optimizing functions with multiple
 variables. They are different than traditional approach to optimization which involves varying
@@ -72,12 +72,19 @@ good solutions.
 The terminology used in genetic algorithms is explained below -
 
 **Population**: The solution space at any given point of time
+
 **Phenotype**: Population in real world solution space
+
 **Genotype**: Population in computational space
+
 **Chromosome**: An element of the population
+
 **Gene**: An element position in the chromosome
+
 **Allele**: Possible value a gene can take
+
 **Generation**: each stage of population
+
 **Fitness Function**: function to be optimized
 
 
@@ -86,7 +93,9 @@ The terminology used in genetic algorithms is explained below -
 
 ---
 
-###Encoding - The encoding of our current sensitivity optimization problem is as follows -
+### Encoding 
+
+The encoding of our current sensitivity optimization problem is as follows -
 
 **Fitness function**: Sensitivity (Δs)
 **Variables**: Components of the Hyperfine tensor (Ax, Ay, Az)
@@ -98,7 +107,7 @@ The terminology used in genetic algorithms is explained below -
 
 ---
 
-###Crossover Mutation
+### Crossover Mutation
 
 Crossover functions are analogous to mating in natural evolution. They allow chromosomes
 with higher fitness function values to mate and produce children which have a higher chance of
@@ -119,7 +128,7 @@ is 50%.
 
 ---
 
-###Mutation Function
+### Mutation Function
 
 In natural evolution, mutation takes place with low probability in a generation. Its purpose is to
 introduce diversity in the population with the hope of that diversity leading to a better breed
@@ -133,7 +142,7 @@ optimum solution’s path. When the genotype is binary, mutation can be implemen
 
 ---
 
-###Survival Selection
+### Survival Selection
 
 This step involves choosing the parts of the population to promote to the next generation and
 the parts to discard entirely. This step has a major effect on the performance of the genetic
@@ -146,7 +155,7 @@ probabilistic methods like Roulette-wheel selection method or tournament selecti
 
 ---
 
-###Termination Condition
+### Termination Condition
 
 Termination condition can be when a fixed value of the objective is reached or a fixed number
 of generations have passed or the current population size is lower than a certain number or
@@ -154,7 +163,7 @@ there is no or little improvement in the solutions generated over the past few g
 
 ---
 
-##Problem specific conditions
+## Problem specific conditions
 
 
 Choosing the appropriate function to use for crossover, mutation, survival selection, etc.
@@ -180,7 +189,7 @@ termination condition was kept at when the population size was reduced to less t
 
 ---
 
-##Implementation
+## Implementation
 
 
 The C++ library linear algebra ['Eigen'](http://eigen.tuxfamily.org/index.php?title=Main_Page) has been used for calculation of the eigenvalues and eigenvectors of the Hamiltonian. Eigen library is useful for performing large matrix operations.
@@ -205,7 +214,7 @@ and simply run the command,
 ---
 
 
-##Results
+## Results
 
 The following Fitness vs. Generation number plots for different values of K show the average
 fitness moving towards the maximum fitness in each generation.
